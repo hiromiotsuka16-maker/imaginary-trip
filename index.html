@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@500;700&family=Noto+Serif+JP:wght@400;600;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>Travel Site</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="header-nav">
+      <input type="checkbox" id="nav-input" class="nav-unshown">
+      <label for="nav-input" id="nav-open"><span></span></label>
+
+      <ul class="header-list">
+        <li class="header-item"><a href="#">top</a></li>
+        <li class="header-item"><a href="#">sky view</a></li>
+        <li class="header-item"><a href="#">access</a></li>
+        <li class="header-item btn-reserve"><a href="#">ご予約はこちら</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="mv">
+      <div class="mv-inner">
+        <h1 class="mv-title">Imaginary Trip</h1>
+        <p class="mv-catch">sky view</p>
+      </div>
+    </section>
+
+    <section class="concept">
+      <div class="concept-inner">
+        <div class="concept-sub">concept</div>
+        <h2 class="concept-lead">自由気ままな旅を</h2>
+        <p class="concept-text">
+          ふとした時に見上げる空<br>
+          その時々により様々な表情を見せながら<br>
+          どこまでも広がりどこにでも繋がっている<br><br>
+          そんな空から始まる旅を<br>
+          体験してみませんか？
+        </p>
+      </div>
+    </section>
+
+    <section class="skyview">
+      <div class="skyview-inner">
+        <h2 class="section-title">sky view</h2>
+        <div class="card-wrapper">
+          <div class="card sakura">
+            <div class="card-image sakura"></div>
+            <div class="card-text">
+              <h3>Sakura Sky</h3>
+              <p>春の訪れを告げる淡いピンクの空</p>
+            </div>
+          </div>
+          <div class="card yoake">
+            <div class="card-image yoake"></div>
+            <div class="card-text">
+              <h3>Yoake</h3>
+              <p>新しい一日が始まる静かな青</p>
+            </div>
+          </div>
+          <div class="card yuugure">
+            <div class="card-image yuugure"></div>
+            <div class="card-text">
+              <h3>Yuugure</h3>
+              <p>黄金色に染まる幻想的な夕刻</p>
+            </div>
+          </div>
+          <div class="card amanogawa">
+            <div class="card-image amanogawa"></div>
+            <div class="card-text">
+              <h3>Amanogawa</h3>
+              <p>無数の星が流れる夜の芸術</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="access">
+      <div class="access-inner">
+        <h2 class="section-title">access</h2>
+        <div class="access-content">
+          <div class="access-info">
+            <dl class="info-list">
+              <div class="info-item">
+                <dt>店名</dt>
+                <dd>Imaginary Trip</dd>
+              </div>
+              <div class="info-item">
+                <dt>住所</dt>
+                <dd>〒100-8111<br>東京都千代田区千代田1-1</dd>
+              </div>
+              <div class="info-item">
+                <dt>電話番号</dt>
+                <dd>0120-000-000</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="access-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7479754683445!2d139.7432442152568!3d35.65858048019945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd900283d1%3A0xc67e23730e7ef63e!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1690000000000!5m2!1sja!2sjp" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-inner">
+        <h2 class="section-title">contact</h2>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="form-item">
+              <label>お名前</label>
+              <input type="text" placeholder="例：田中太郎">
+            </div>
+            <div class="form-item">
+              <label>メールアドレス</label>
+              <input type="email" placeholder="例：xxxxx@example.com">
+            </div>
+            <div class="form-item">
+              <label>主なご用件</label>
+              <select>
+                <option>ご選択ください</option>
+                <option>ご予約について</option>
+                <option>その他</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label>お問い合わせ内容</label>
+              <textarea placeholder="ここに記入して下さい"></textarea>
+            </div>
+            <div class="form-btn">
+              <button type="submit" class="submit-btn">送信</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <h2 class="footer-logo-text">Imaginary Trip</h2>
+      </div>
+      <div class="footer-nav">
+        <ul class="footer-links">
+          <li><a href="#">top</a></li>
+          <li><a href="#">sky view</a></li>
+          <li><a href="#">access</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <ul class="footer-links">
+          <li><a href="#">利用規約</a></li>
+          <li><a href="#">特定商取引法について</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2023 imaginary trip inc.</p>
+  </footer>
+
+</body>
+</html>
