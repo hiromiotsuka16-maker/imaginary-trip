@@ -1,0 +1,579 @@
+body {
+  margin: 0;
+  padding-top: 80px;
+  font-family: 'Noto Serif JP', serif;
+  color: #5a6fa8;
+  line-height: 1.6;
+}
+
+.nav-unshown {
+  display: none;
+}
+
+#nav-open {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header-list {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.header-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.header-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+  border-right: 1px dotted #ccc;
+}
+
+.header-item a {
+  text-decoration: none;
+  color: #2f4fb2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  display: block;
+  line-height: 80px;
+  transition: 0.3s;
+}
+
+.header-item a:hover {
+  background-color: rgba(47, 79, 178, 0.05);
+}
+
+.btn-reserve {
+  background-color: #2f4fb2;
+}
+
+.btn-reserve a {
+  color: #fff !important;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.1rem;
+}
+
+.btn-reserve a:hover {
+  background-color: #243e8e;
+}
+
+/* --- メインビジュアル --- */
+.mv {
+  height: 100vh;
+  background-image: url("../images/FrontEnd_Lesson5/image/test.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.mv-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mv-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 5.5rem;
+  color: #2f4fb2;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.mv-catch {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 0;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* --- コンセプト --- */
+.concept {
+  background: linear-gradient(180deg, #f4f1fa 0%, #eef2ff 60%, #ffffff 100%);
+  padding: 120px 0 80px;
+}
+
+.concept-sub {
+  background-image: url("../images/FrontEnd_Lesson5/image/concept.jpg");
+  max-width: 1000px;
+  min-height: 150px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: #6b7bb5;
+}
+
+.concept-lead {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 3.5rem;
+  color: #2f4fb2;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.concept-text {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.6rem;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+  color: #6b7bb5;
+  text-align: center;
+}
+
+/* --- 共通セクションタイトル --- */
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4.2rem;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-align: center;
+  color: #2f4fb2;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+/* --- スカイビュー --- */
+.skyview {
+  background: linear-gradient(180deg, #ffffff 0%, #eef4ff 45%, #dce8ff 100%);
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.skyview-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.card {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card-image {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-text {
+  padding: 24px 20px 28px;
+  text-align: center;
+}
+
+.card-text h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-bottom: 16px;
+  color: #2f4fb2;
+}
+
+.card-text p {
+  font-size: 1.15rem;
+  line-height: 2;
+  color: #6b7bb5;
+}
+
+.card-image.sakura {
+  background-image: url("../images/FrontEnd_Lesson5/image/skyview/skyview1.jpg");
+}
+
+.card-image.yoake {
+  background-image: url("../images/FrontEnd_Lesson5/image/skyview/skyview2.jpg");
+}
+
+.card-image.yuugure {
+  background-image: url("../images/FrontEnd_Lesson5/image/skyview/skyview3.jpg");
+}
+
+.card-image.amanogawa {
+  background-image: url("../images/FrontEnd_Lesson5/image/skyview/skyview4.jpg");
+}
+
+/* --- アクセス --- */
+.access {
+  background: linear-gradient(135deg, #fff5e6 0%, #f0e6ff 100%);
+  padding: 120px 0;
+}
+
+.access-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.access-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.access-info,
+.access-map {
+  flex: 1;
+}
+
+.info-list {
+  border-top: 1px solid #d1bfa7;
+}
+
+.info-item {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid #d1bfa7;
+  align-items: center;
+}
+
+.info-item dt {
+  width: 120px;
+  color: #2f4fb2;
+  font-weight: 600;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.info-item dd {
+  flex: 1;
+  color: #5a6fa8;
+  line-height: 1.8;
+  margin-left: 0;
+  font-size: 1.15rem;
+}
+
+.access-map iframe {
+  display: block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- コンタクト --- */
+.contact {
+  background: linear-gradient(180deg, #f0faff 0%, #e0f2ff 100%);
+  padding: 100px 0;
+}
+
+.contact-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 60px 80px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.form-item {
+  margin-bottom: 30px;
+}
+
+.form-item label {
+  display: block;
+  font-weight: 600;
+  color: #6b7bb5;
+  margin-bottom: 10px;
+}
+
+.form-item input,
+.form-item select,
+.form-item textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d1e3f0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* 幅の計算を正しく */
+}
+
+.submit-btn {
+  background-color: #2f4fb2;
+  color: #fff;
+  padding: 15px 100px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* --- フッター --- */
+.footer {
+  background: linear-gradient(135deg, #e0e7ff 0%, #6b7bb5 100%);
+  padding: 80px 0 20px;
+  color: #fff;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.footer-logo-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: right;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    height: 80px;
+    position: fixed;
+  }
+
+  #nav-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 80px;
+    margin-left: auto;
+    cursor: pointer;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1001;
+  }
+
+  #nav-open span,
+  #nav-open span::before,
+  #nav-open span::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #2f4fb2;
+    position: absolute;
+    transition: 0.3s;
+  }
+
+  #nav-open span::before {
+    bottom: 8px;
+  }
+
+  #nav-open span::after {
+    top: 8px;
+  }
+
+  .header-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.98);
+    transition: 0.4s;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 1000;
+  }
+
+  #nav-input:checked~.header-list {
+    right: 0;
+  }
+
+  #nav-input:checked~#nav-open span {
+    background: transparent;
+  }
+
+  #nav-input:checked~#nav-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #nav-input:checked~#nav-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .header-item {
+    width: 100%;
+    flex: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .header-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .header-item a {
+    line-height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .btn-reserve {
+    height: auto;
+    margin-top: 30px;
+    width: 80%;
+    background-color: #2f4fb2;
+  }
+
+  .btn-reserve a {
+    line-height: 60px;
+  }
+
+  .mv-title {
+    font-size: 1.5rem !important;
+  }
+
+  .mv-catch {
+    font-size: 1.5rem;
+  }
+
+  .concept-lead {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .concept-sub {
+    font-size: 1.8rem;
+    width: 90%;
+    min-height: 100px;
+  }
+
+  .card-wrapper,
+  .access-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .card-image {
+    height: 250px;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .info-item dt {
+    width: 100%;
+  }
+
+  .contact-form-container {
+    padding: 40px 20px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
